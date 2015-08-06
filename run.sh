@@ -29,7 +29,7 @@ sed -i -e "s/^ext_ifname=.*\$/ext_ifname=${EXTIFACE}/" \
        -e "s/^listening_ip=.*\$/listening_ip=${INTIFACE}/" \
        -e "s/^enable_natpmp=.*\$/enable_natpmp=yes/" \
        -e "s/^enable_upnp=.*\$/enable_upnp=yes/" \
-       -e "s%192.168.0.0/24%${$IP}/32%" \
+       -e "s%192.168.0.0/24%${IP}/32%" \
        -e "s%192\.168\.1\.0/24%${INTNET}%" \
        /etc/miniupnpd/miniupnpd.conf
 
